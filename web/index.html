@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页换肤</title>
+   <style>
+       .bd {
+           background: #dedbd7;
+       }
+      .bd1 {
+       background: pink;
+       }
+       .bd2 {
+           background: blueviolet;
+       }
+   </style>
+    <script  >
+         var i=0;
+        function changeImage() {
+            var className = ["bd","bd1","bd2"];
+             i++;
+            document.body.className=className[i];
+                if(i==className.length-1){
+                    i=-1;
+                }
+        }
+    </script>
+</head>
+<body class="bd">
+ <div><input type="button" onclick="changeImage()" value="换背景颜色"/></div>
+ <hr/>
+<p>
+
+</p>
+</body>
+</html>
